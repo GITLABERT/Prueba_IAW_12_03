@@ -30,13 +30,12 @@
                     $pass = "root";
                     $database = "panaderia";
             
-                    //Conectando 
                     $con = new mysqli($host, $user, $pass, $database);
                     //Selecciono la base de datos
                     mysqli_select_db($con, "panaderia");
-                    //Creo la sentencia
+                    //Creamos la sentencia
                     $consultar="SELECT nombre FROM panes";
-                    //Ejecuto la sentencia
+                    //Ejecutamos la sentencia
                     $registros=mysqli_query($con,$consultar);	
                     echo "<label for='seleccionar'>¿Qué pan desea pedir?</label>";
                     echo "<select name='seleccionar' id='seleccionar' class='form-control'>";
