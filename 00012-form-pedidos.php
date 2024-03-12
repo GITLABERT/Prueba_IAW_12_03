@@ -31,7 +31,7 @@
                     $database = "panaderia";
             
                     $con = new mysqli($host, $user, $pass, $database);
-                    //Selecciono la base de datos
+                    //Seleccionamos la base de datos de la práctica
                     mysqli_select_db($con, "panaderia");
                     //Creamos la sentencia
                     $consultar="SELECT nombre FROM panes";
